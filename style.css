@@ -2,12 +2,49 @@
  Theme Name:   No Safe Sallys Theme
  Theme URI:    http://nosafesallys.org/
  Description:  Catch Responsive Child Theme
- Author:       John Doe
- Author URI:   http://example.com
+ Author:       Design Missoula
+ Author URI:   http://designmissoula.com
  Template:     catch-responsive
- Version:      1.1.2
+ Version:      1.1.3
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  GitHub Theme URI: https://github.com/DesignMissoula/nss-theme
 */
+
+
+section#feature-slider div.entry-container,
+section#feature-slider .cycle-pager,
+section#feature-slider .cycle-next,
+section#feature-slider .cycle-prev {
+	display: none;
+}
+
+.sidebar-header-center {
+    /* float: right; */
+    margin: 0px auto;
+    display: block;
+    padding: 20px 0px 0px;
+}
+
+.sidebar-header-center section.widget {
+	margin: 0px;
+}
+
+.sidebar-header-center .widget-wrap {
+	text-align: center;
+}
+
+a {
+	color: #0d7f7b;
+}
+
+
+
+@media screen and (min-width: 990px) and (max-width: 1280px) { 
+	
+	.sidebar-header-center .widget-wrap img {
+		max-width: 40%;
+	}
+
+}
